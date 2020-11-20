@@ -22,7 +22,7 @@ Path to edit the connection:
 database>config.php
 
 
-!["FormsPHP Presentation"](https://github.com/leandro-de-paula/formPHP/blob/main/public/img/form.png "FormsPHP Presentation")
+!["FormsPHP Presentation"](https://github.com//leandro-de-paula/formPHP/blob/main/public/img/Form.png"FormsPHP Presentation")
 
 Feel free to use and evolve as you wish
 
