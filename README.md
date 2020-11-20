@@ -22,13 +22,13 @@ Path to edit the connection:
 database>config.php
 
 
-!["FormsPHP Presentation"](https://github.com/leandro-de-paula/formPHP/blob/main/img/form.png "FormsPHP Presentation")
+!["FormsPHP Presentation"](https://github.com/leandro-de-paula/formPHP/blob/main/public/img/form.png "FormsPHP Presentation")
 
 Feel free to use and evolve as you wish
 
 ### Download zip:
 
-Download from [GitHub](https://github.com/leandro-de-paula/formPHP/archive/master.zip).
+Download from [GitHub](https://github.com/leandro-de-paula/formPHP/archive/main.zip).
 
 ### Using The Command Line:
 
@@ -39,4 +39,4 @@ _**Important Note**: To install it via Git, you need at least git version 2.25.1
     Clone to your machine
 
     ```bash
-    git clone https://github.com/leandro-de-paula/formPHP.git
+    gh repo clone leandro-de-paula/formPHP
