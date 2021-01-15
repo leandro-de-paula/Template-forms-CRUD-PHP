@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Compatibilidade HTML5 IE -->
-	<!--[if lt IE 9]> 
-	<script src="js/html5shiv.js"></script> 
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
 	<![endif]-->
 
 	<!-- Bootstrap Offgrid -->
@@ -32,15 +32,22 @@
         <nav class="navbar navbar-expand-sm navbar-light bg-primary"><!-- Barra de Navegação -->
             <div class="container">
                 <div class="row">
-                    <form class="mt-4 mb-4" action="../../forms/src/result.php" method="get"> 
+                    <form class="mt-4 mb-4" action="../../formsPHP/src/result.php" method="get">
                         <div class="input-group input-group-lg">
                             <input type="text" class="form-control" name="search" id="search" placeholder="Nome:">
-                            <div class="input-group-append">    
+                            <div class="input-group-append">
                                 <button type="submit" class="btn btn-outline-light" id="send">Buscar</button>
                             </div>
                         </div>
                     </form>
                 </div>
+								<div class="mt-4 mb-4">
+                  <a href="../../formsPHP/src/result.php"
+                  class="btn btn-outline-light"
+                  rel="noopener noreferrer">
+                  Listar Cadastrados
+                </a>
+              </div>
             </div>
         </nav><!-- Fim da Barra de Navegação -->
     </header><!-- Fim do cabeçalho-->
@@ -48,21 +55,21 @@
         <div class="container">
             <div class="clientFormSubmit">
                 <div class="row justify-content-center">
-                    <div class="col-md-5">
-                        <form class="d-flex" action="../../forms/src/receiving.php" method="post"> 
-                            <div class="form-group">
+                    <div class="col-md-6">
+                        <form class="d-flex" action="../../formsPHP/src/receiving.php" method="post">
+                            <div class="form-group col-12">
                                 <div class="align-self-center">
                                     <br>
                                     <h2>Adicionar Novo</h2>
                                     <p>Entre com dados para cadastro:</p>
                                     <hr>
-                                </div>						
+                                </div>
                                 <label for="name"></label>
                                 <input type="text" class="form-control form-control-lg" name="name" id="name" placeholder="Nome:">
-                                
+
                                 <label for="inputEmail1"></label>
                                 <input type="email" class="form-control form-control-lg" name="email" id="inputEmail1" placeholder="E-mail:">
-                                
+
                                 <label for="address"></label>
                                 <input type="text" class="form-control form-control-lg" name="address" id="address" placeholder="Endereço:">
                                 <br>
@@ -74,11 +81,11 @@
                                     </div>
                                 </div>
                             </div>
-                        </form>	
+                        </form>
                     </div>
                 </div>
             </div>
-            
+
     </section><!-- ./Inscrição Formulario -->
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
