@@ -49,9 +49,15 @@ Para usar <Template-forms-CRUD-PHP>, siga estas etapas:
 
 **Database structure**
 Crie um banco de dados seguindo a seguinte estrutura:
-`<Before starting to run the application, I recommend that you create a database with the following structure: Database: forms Table: tbforms Fields: id, name, email, address Path to edit the connection: database>config.php>`
 
+```
+Database: forms
+Table: tbforms
+Fields: id, name, email, address
 
+Path to edit the connection:
+database/config.php
+```
 
 ---
 By **Leandro de Paula**
