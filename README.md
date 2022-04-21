@@ -31,6 +31,7 @@ Para instalar,<Template-forms-CRUD-PHP> siga estas etapas:
 Linux: `<Terminal>` | macOS: `<Terminal>` | Windows: `<cmd>` | Android: `<Termux>`:
 
 1 - Clone ou Download do Projeto:
+
 _**Important Note**: Clone ou faça o Download do projeto diretamente no repositório responsável do PHP._
 
 **Clone:**
@@ -47,7 +48,7 @@ git clone https://github.com/leandro-de-paula/Template-forms-CRUD-PHP.git
 
 Para usar <Template-forms-CRUD-PHP>, siga estas etapas:
 
-**Database structure**
+**Database structure:**
 Crie um banco de dados seguindo a seguinte estrutura:
 
 ```
