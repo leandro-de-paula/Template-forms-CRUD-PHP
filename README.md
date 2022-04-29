@@ -1,8 +1,8 @@
-# Template-forms-CRUD-PHP
-![GitHub repo size](https://img.shields.io/github/repo-size/leandro-de-paula/ReviewedTodayInJS?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/leandro-de-paula/ReviewedTodayInJS?style=for-the-badge)
+# formsPHP
+![GitHub repo size](https://img.shields.io/github/repo-size/leandro-de-paula/formsPHP?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/leandro-de-paula/formsPHP?style=for-the-badge)
 
-!["FormsPHP Presentation"](https://github.com/leandro-de-paula/formPHP/blob/main/public/img/Form.png "FormsPHP Presentation")
+!["FormsPHP Presentation"](https://github.com/leandro-de-paula/formsPHP/blob/main/public/img/Form.png "FormsPHP Presentation")
 [![bootstrap version](https://img.shields.io/badge/bootstrap-vs%204.1.3-orange)](https://getbootstrap.com.br/)  
 [![php version](https://img.shields.io/badge/php-vs%207.1.29-blue)](https://www.php.net/)   
 
@@ -24,32 +24,31 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 - Ter uma máquina `<Windows / Linux / Mac>`. 
 
 
-## 🚀 Instalando <Template-forms-CRUD-PHP>
+## 🚀 Instalando <formsPHP>
 
-Para instalar,<Template-forms-CRUD-PHP> siga estas etapas:
+Para instalar,<formsPHP> siga estas etapas:
 
 Linux: `<Terminal>` | macOS: `<Terminal>` | Windows: `<cmd>` | Android: `<Termux>`:
 
 1 - Clone ou Download do Projeto:
-
 _**Important Note**: Clone ou faça o Download do projeto diretamente no repositório responsável do PHP._
 
 **Clone:**
 
 ```
-git clone https://github.com/leandro-de-paula/Template-forms-CRUD-PHP.git
+git clone https://github.com/leandro-de-paula/formsPHP.git
 ``` 
 
 **Download zip:** ⬇️
-[Template-forms-CRUD-PHP](https://github.com/leandro-de-paula/Template-forms-CRUD-PHP/archive/main.zip). 
+[formsPHP](https://github.com/leandro-de-paula/formsPHP/archive/main.zip). 
 
 
-## ☕ Usando <Template-forms-CRUD-PHP>
+## ☕ Usando <formsPHP>
 
-Para usar <Template-forms-CRUD-PHP>, siga estas etapas:
+Para usar <formsPHP>, siga estas etapas:
 
-**Database structure:**
-Crie um banco de dados seguindo a seguinte estrutura:
+**Database structure**
+Crie um banco de dados no `<MySQL>` seguindo a seguinte estrutura:
 
 ```
 Database: forms
@@ -59,6 +58,17 @@ Fields: id, name, email, address
 Path to edit the connection:
 database/config.php
 ```
+
+**Execução Rápida**
+> Usando Servidor web embutido do `<PHP>`
+Abra a pasta do diretório no `<Terminal / cmd >`
+
+```
+php -S localhost:8000 -t public/
+```
+> **⚠️ Aviso:** Esse servidor web foi desenvolvido para auxiliar no desenvolvimento de aplicações. Ele também pode ser útil para testes ou para demonstrações de aplicações que forem executadas em ambientes controlados. Ele não foi desenvolvido para ser um web server completo. Ele não deve ser utilizado em uma rede pública.
+
+
 
 ---
 By **Leandro de Paula**
