@@ -1,7 +1,8 @@
-<?php include_once "../database/config.php";?>
 <html>
     <body>
-    <?php 
+        <?php 
+        include_once "../database/config.php";
+
         $name = $_POST["name"];
         $email = $_POST["email"];
         $address = $_POST["address"];

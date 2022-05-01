@@ -32,7 +32,7 @@
         <nav class="navbar navbar-expand-sm navbar-light bg-primary"><!-- Barra de Navegação -->
             <div class="container">
                 <div class="row">
-                    <form class="mt-4 mb-4" action="../../formsPHP/src/result.php" method="get">
+                    <form class="mt-4 mb-4" action="../src/result.php" method="get">
                         <div class="input-group input-group-lg">
                             <input type="text" class="form-control" name="search" id="search" placeholder="Nome:">
                             <div class="input-group-append">
@@ -42,7 +42,7 @@
                     </form>
                 </div>
 								<div class="mt-4 mb-4">
-                  <a href="../../formsPHP/src/result.php"
+                  <a href="../src/result.php"
                   class="btn btn-outline-light"
                   rel="noopener noreferrer">
                   Listar Cadastrados
@@ -56,7 +56,7 @@
             <div class="clientFormSubmit">
                 <div class="row justify-content-center">
                     <div class="col-md-6">
-                        <form class="d-flex" action="../../formsPHP/src/receiving.php" method="post">
+                        <form class="d-flex" action="../src/receiving.php" method="post">
                             <div class="form-group col-12">
                                 <div class="align-self-center">
                                     <br>
@@ -86,7 +86,12 @@
                 </div>
             </div>
 
-    </section><!-- ./Inscrição Formulario -->
+    </section>
+    <script>
+        console.log("index carregada")
+    </script>
+    
+    <!-- ./Inscrição Formulario -->
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
