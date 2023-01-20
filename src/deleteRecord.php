@@ -2,9 +2,9 @@
  
     <?php 
         $id = $_GET["id"];
-        mysqli_select_db($conn,'$dbname');
+        mysqli_select_db($conn,$dbname);
         
-        $sql = "DELETE FROM `tbform` WHERE `id`='$id'";
+        $sql = "DELETE FROM `tbforms` WHERE `id`='$id'";
         
         if (mysqli_query($conn, $sql)) {
             echo "

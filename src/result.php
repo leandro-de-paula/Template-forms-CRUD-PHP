@@ -38,7 +38,6 @@
              else 
              return false;
         }
-        console.log('AQUI')
     </script>
     
     <br>
@@ -55,8 +54,11 @@
     </table>
     
     <?php 
+    ini_set("display_errors", true);
+    error_reporting(E_ALL);
+    
     $search = $_GET['search'];
-    $result_names = "SELECT * FROM tbform WHERE name LIKE '$search%' Order By name ASC limit 10";
+    $result_names = "SELECT * FROM tbforms WHERE name LIKE '$search%' Order By name ASC limit 10";
     $result = mysqli_query($conn, $result_names);
     $account = mysqli_num_rows($result);
     

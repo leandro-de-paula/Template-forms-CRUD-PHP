@@ -36,7 +36,7 @@
 
     <?php
     $id = $_GET['id'];
-    $result_names = "SELECT * FROM tbform WHERE id LIKE '$id'";
+    $result_names = "SELECT * FROM tbforms WHERE id LIKE '$id'";
     $result = mysqli_query($conn, $result_names);
 
     while ($rows_names = mysqli_fetch_array($result)) {
