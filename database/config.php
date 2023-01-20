@@ -2,11 +2,11 @@
 
       $servidor = "localhost";
 // localhost tambem é web
-      $dbname = "form";
+      $dbname = "forms";
 // nome do banco
       $dbusuario = "root";
 // usuário do banco
-      $dbsenha = "root";
+      $dbsenha = "";
 // senha usuário do banco
 
       $conn = mysqli_connect($servidor, $dbusuario, $dbsenha, $dbname);
