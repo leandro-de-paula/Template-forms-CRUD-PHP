@@ -1,19 +1,17 @@
 <?php
-
-      $servidor = "localhost";
-// localhost tambem é web
-      $dbname = "forms";
-// nome do banco
-      $dbusuario = "root";
-// usuário do banco
-      $dbsenha = "";
-// senha usuário do banco
-
-      $conn = mysqli_connect($servidor, $dbusuario, $dbsenha, $dbname);
-
-if (!$conn) {
-    die("Conexao falhou: " . mysqli_connect_error());
-}
+function newConnection($database = 'forms') {
+      $server = '127.0.1';
+      $user = 'root';
+      $password = 'root';
+  
+      $connection = new mysqli($server, $user, $password, $database);
+  
+      if ($connection->connect_error) {
+          die('Erro: ' . $connection->connect_error);
+      }
+  
+      return $connection;
+  }
 ?>
  <script>
       console.log('¬¨config.php loaded');
