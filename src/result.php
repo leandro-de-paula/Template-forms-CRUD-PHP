@@ -56,10 +56,20 @@
     <?php 
     ini_set("display_errors", true);
     error_reporting(E_ALL);
+    $connection = newConnection();
     
-    $search = $_GET['search'];
-    $result_names = "SELECT * FROM tbforms WHERE name LIKE '$search%' Order By name ASC limit 10";
-    $result = mysqli_query($conn, $result_names);
+    if (empty($_GET['search'])){
+        $sql = "SELECT * FROM tbforms Order By name ASC limit 10";
+        $result = $connection->query($sql);
+    } else {
+        $search = "{$_GET['search']}%";
+        $sql = "SELECT * FROM tbforms WHERE name LIKE ? Order By name ASC limit 10";
+        $query = $connection->prepare($sql);
+        $query->bind_param("s",$search);
+        $query->execute();
+        $result = $query->get_result();
+    }
+
     $account = mysqli_num_rows($result);
     
     while ($rows_names = mysqli_fetch_array($result)) {
