@@ -35,10 +35,16 @@
     <br>
 
     <?php
+    ini_set("error_display", true);
+    error_reporting(E_ALL);
+    
     $id = $_GET['id'];
-    $result_names = "SELECT * FROM tbforms WHERE id LIKE '$id'";
-    $result = mysqli_query($conn, $result_names);
-
+    $connection = newConnection();
+    $sql = "SELECT * FROM tbforms WHERE id LIKE ?";
+    $query = $connection->prepare($sql);
+    $query->bind_param("i",$id);
+    $query->execute();
+    $result = $query->get_result();
     while ($rows_names = mysqli_fetch_array($result)) {
        $id = $rows_names['id'];
        $name = $rows_names['name'];
