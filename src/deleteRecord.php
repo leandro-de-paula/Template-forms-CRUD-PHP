@@ -1,22 +1,24 @@
-<?php include_once "../database/config.php";?>
- 
-    <?php 
-        $id = $_GET["id"];
-        mysqli_select_db($conn,$dbname);
-        
-        $sql = "DELETE FROM `tbforms` WHERE `id`='$id'";
-        
-        if (mysqli_query($conn, $sql)) {
-            echo "
-                <script>
-                    
-                    alert('Dados deletados com sucesso !'); 
-                    window.location = 'result.php?search=';
-                
-                </script>";
+<?php 
+include_once "../database/config.php";
+ini_set("diplay_error",true);
+error_reporting(E_ALL);
 
-        }else{
-            echo "Não deletado " . $sql . "<br>" . mysqli_error($conn);
-        }
-            mysqli_close($conn);
-        ?>
+$id = $_GET["id"];
+$connection = newConnection();
+$sql = "DELETE FROM `tbforms` WHERE `id`=?";
+$delete = $connection->prepare($sql);
+$delete->bind_param("i",$id);
+if ($delete->execute()) {
+    echo "
+        <script>
+            
+            alert('Dados deletados com sucesso !'); 
+            window.location = 'result.php?search=';
+        
+        </script>";
+
+}else{
+    echo "Não deletado: {$delete->error}<br>";
+}
+    $delete->close();
+?>
