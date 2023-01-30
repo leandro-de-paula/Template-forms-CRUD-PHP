@@ -89,7 +89,9 @@
             </table>
         ';
     }
-    ;?>
+
+    $result->close();
+    ?>
 
 <div>
     <h3>

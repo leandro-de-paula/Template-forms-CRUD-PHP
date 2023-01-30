@@ -51,7 +51,8 @@
        $email = $rows_names['email'];
        $address = $rows_names['address'];
     }
-    ;?>
+    $result->close();
+    ?>
     <section><!-- Edição Formulario -->
         <div class="container">
             <div class="clientFormSubmit">

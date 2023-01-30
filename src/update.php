@@ -31,7 +31,7 @@
                 </script>";
 
         }else{
-            echo "Não foi atualizado: " . $sql . "<br>" . mysqli_error($conn);
+            echo "Não foi atualizado: " . $update->error . "<br>" ;
         }
-            mysqli_close($conn);
+            $update->close();
         ?>
