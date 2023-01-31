@@ -1,22 +1,27 @@
 <?php include_once "../database/config.php";?>
  
     <?php 
+    ini_set("display_errors", true);
+    error_reporting(E_ALL);
+
         $id = $_POST["id"];
         $name = $_POST["name"];
         $email = $_POST["email"];
         $address = $_POST["address"];
 
-        
-        mysqli_select_db($conn,'$dbname');
-        
-        $sql = "UPDATE `tbform` SET `name`='$name',`email`='$email',`address`='$address' WHERE `id`='$id'";
+        $params = [
+            $name,
+            $email,
+            $address,
+            $id
+        ];
 
-        echo "
-                <script>
-                    console.log('.json_eencode($address)');
-                </script>";
+        $connection = newConnection();
+        $sql = "UPDATE `tbforms` SET `name`= ?,`email`= ?,`address`= ? WHERE `id`= ?";
+        $update = $connection->prepare($sql);
+        $update->bind_param("sssi",...$params);
         
-        if (mysqli_query($conn, $sql)) {
+        if ($update->execute()) {
             echo "
                 <script>
                     
@@ -26,7 +31,7 @@
                 </script>";
 
         }else{
-            echo "Não foi atualizado: " . $sql . "<br>" . mysqli_error($conn);
+            echo "Não foi atualizado: " . $update->error . "<br>" ;
         }
-            mysqli_close($conn);
+            $update->close();
         ?>

@@ -50,13 +50,24 @@ Para usar <formsPHP>, siga estas etapas:
 **Database structure**
 Crie um banco de dados no `<MySQL>` seguindo a seguinte estrutura:
  
-```
+```sql
+/*
 Database: forms
 Table: tbforms
 Fields: id, name, email, address
  
 Path to edit the connection:
 database/config.php
+*/
+
+CREATE DATABASE IF NOT EXISTS forms
+
+CREATE TABLE IF NOT EXISTS tbforms(
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100),
+    address VARCHAR(250)
+    )
 ```
  
 **Execução Rápida**
