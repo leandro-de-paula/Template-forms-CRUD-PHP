@@ -48,7 +48,17 @@ git clone https://github.com/leandro-de-paula/formsPHP.git
 Para usar <formsPHP>, siga estas etapas:
  
 **Database structure**
-Crie um banco de dados no `<MySQL>` seguindo a seguinte estrutura:
+Para criar o banco de dados acesse:
+```
+http://localhost/formsPHP/database/createDatabase.php
+```
+
+Para criar a tabela acesse:
+```
+http://localhost/formsPHP/database/createTable.php
+```
+
+Ou faça manualmente criando um banco de dados e tabela no `<MySQL>` seguindo a seguinte estrutura: 
  
 ```sql
 /*
