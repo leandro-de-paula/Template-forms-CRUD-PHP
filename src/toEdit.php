@@ -30,7 +30,7 @@
 <body>
 
     <?php include_once "search.php";?>
-    <?php include_once "../database/config.php";?>
+    <?php include_once "../src/database/config.php";?>
 
     <br>
 
