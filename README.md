@@ -50,12 +50,12 @@ Para usar <formsPHP>, siga estas etapas:
 **Database structure**
 Para criar o banco de dados acesse:
 ```
-http://localhost/formsPHP/database/createDatabase.php
+http://localhost/formsPHP/src/database/createDatabase.php
 ```
 
 Para criar a tabela acesse:
 ```
-http://localhost/formsPHP/database/createTable.php
+http://localhost/formsPHP/src/database/createTable.php
 ```
 
 Ou faça manualmente criando um banco de dados e tabela no `<MySQL>` seguindo a seguinte estrutura: 
