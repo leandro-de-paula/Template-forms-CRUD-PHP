@@ -1,4 +1,5 @@
 # formsPHP
+
 ![GitHub repo size](https://img.shields.io/github/repo-size/leandro-de-paula/formsPHP?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/leandro-de-paula/formsPHP?style=for-the-badge)
  
@@ -7,26 +8,24 @@
 [![php version](https://img.shields.io/badge/php-vs%207.1.29-blue)](https://www.php.net/)  
  
 > Project with Frontend in Bootstrap, the main objective is to perform basic commands in the `<MySQL>` database, using `<PHP>` in the backend to do `<CRUD>`.
- 
-### ⬆️ Update
- 
+ <br/>
+
+## ⬆️ Update
+<p>
 Esse projeto não tem fim, em outras palavras sempre teremos que revisitar conceitos, novas técnicas, mudanças nos lançamentos, e sempre que algo for revisado o update será realizado
- 
- 
-## Uso do Projeto
-Fique a vontade para clonar, visitar os códigos e testar!
- 
+</p>
+
+## 🤝 Uso do Projeto
+**Fique a vontade para clonar, visitar os códigos e testar!**
+
 ## 💻 Pré-requisitos
- 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 - Tenha o `<git>` instalado.
 - Instale a versão `<PHP 7>` ou superior com banco de dados.
 - Ter uma máquina `<Windows / Linux / Mac>`.
  
- 
 ## 🚀 Instalando <formsPHP>
- 
-Para instalar,<formsPHP> siga estas etapas:
+Para instalar <formsPHP> siga estas etapas:
  
 Linux: `<Terminal>` | macOS: `<Terminal>` | Windows: `<cmd>` | Android: `<Termux>`:
  
@@ -41,10 +40,13 @@ git clone https://github.com/leandro-de-paula/formsPHP.git
  
 **Download zip:** ⬇️
 [formsPHP](https://github.com/leandro-de-paula/formsPHP/archive/main.zip).
- 
+
+## ⚙️ Configurando 
+Depois do repositório criado pelo download e extração do zip ou pelo git clone, abra a pasta `<src>`, copie e cole na pasta `<src>` o seguinte arquivo: `<env.sample.ini>`, depois renomeie o arquivo copiado para `<env.ini>`.
+>Abra o arquivo `<env.ini>` e depois entre com os dados do banco de dados conforme indicação do arquivo `<env.ini>`.
+>Note que dentro do arquivo já existirá a indicação do banco `<database = "forms">`, nesse não precisa alterar pois o mesmo será usado automaticamente ou criado manualmente conforme orientação do passo seguinte.
  
 ## ☕ Usando <formsPHP>
- 
 Para usar <formsPHP>, siga estas etapas:
  
 **Database structure**
@@ -67,7 +69,7 @@ Table: tbforms
 Fields: id, name, email, address
  
 Path to edit the connection:
-database/config.php
+src/database/config.php
 */
 
 CREATE DATABASE IF NOT EXISTS forms
@@ -96,7 +98,7 @@ php -S localhost:8000
 http://localhost:8000/public/index.php
  
 ```
- 
+
  
 ---
 By **Leandro de Paula**
