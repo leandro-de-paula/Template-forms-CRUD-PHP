@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Compatibilidade HTML5 IE -->
-	<!--[if lt IE 9]>
-	<script src="js/html5shiv.js"></script>
+	<!--[if lt IE 9]> 
+	<script src="js/html5shiv.js"></script> 
 	<![endif]-->
 
 	<!-- Bootstrap Offgrid -->
@@ -28,61 +28,56 @@
 
 </head>
 <body>
-
-    <?php include_once "search.php";?>
     <?php include_once "../src/config/config.php";?>
-
-    <br>
-
-    <?php
-    ini_set("error_display", true);
-    error_reporting(E_ALL);
-    
-    $id = $_GET['id'];
-    $connection = newConnection();
-    $sql = "SELECT * FROM tbforms WHERE id LIKE ?";
-    $query = $connection->prepare($sql);
-    $query->bind_param("i",$id);
-    $query->execute();
-    $result = $query->get_result();
-    while ($rows_names = mysqli_fetch_array($result)) {
-       $id = $rows_names['id'];
-       $name = $rows_names['name'];
-       $email = $rows_names['email'];
-       $address = $rows_names['address'];
-    }
-    $result->close();
-    ?>
-    <section><!-- Edição Formulario -->
+    <header><!-- Incio do cabeçalho -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-primary"><!-- Barra de Navegação -->
+            <div class="container">
+                <div class="row">
+                    <form class="mt-4 mb-4" action="result.php" method="get"> 
+                        <div class="input-group input-group-lg">
+                            <input type="text" class="form-control" name="search" id="search" placeholder="Nome:">
+                            <div class="input-group-append">    
+                                <button type="submit" class="btn btn-outline-light" id="send">Buscar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+			  <div class="mt-4 mb-4">
+                <a href="../src/result.php"
+                  class="btn btn-outline-light"
+                  rel="noopener noreferrer">
+                  Listar
+                </a>
+              </div>
+            </div>
+        </nav><!-- Fim da Barra de Navegação -->
+    </header><!-- Fim do cabeçalho-->
+    <section><!-- Inscrição Formulario -->
         <div class="container">
             <div class="clientFormSubmit">
                 <div class="row justify-content-center">
                     <div class="col-md-6">
-                        <form class="d-flex" action="update.php" method="post">
+                        <form class="d-flex" action="../src/receiving.php" method="post">
                             <div class="form-group col-12">
                                 <div class="align-self-center">
                                     <br>
-                                    <h2>Editar</h2>
+                                    <h2>Adicionar Novo</h2>
+                                    <p>Entre com dados para cadastro:</p>
                                     <hr>
                                 </div>
-                                <label for="id">Id:</label>
-                                <input type="text" class="form-control form-control-lg" name="id" id="id" value="<?php echo $id;?>" readonly>
+                                <label for="name"></label>
+                                <input type="text" class="form-control form-control-lg" name="name" id="name" placeholder="Nome:">
 
-                                <label for="name">Nome:</label>
-                                <input type="text" class="form-control form-control-lg" name="name" id="name" value="<?php echo $name;?>">
+                                <label for="inputEmail1"></label>
+                                <input type="email" class="form-control form-control-lg" name="email" id="inputEmail1" placeholder="E-mail:">
 
-                                <label for="inputEmail1">E-mail:</label>
-                                <input type="email" class="form-control form-control-lg" name="email" id="inputEmail1" value="<?php echo $email;?>">
-
-                                <label for="address">Endereço:</label>
-                                <input type="text" class="form-control form-control-lg" name="address" id="address" value="<?php echo $address;?>">
+                                <label for="address"></label>
+                                <input type="text" class="form-control form-control-lg" name="address" id="address" placeholder="Endereço:">
                                 <br>
                                 <div class="form-row">
                                     <div class="form-group col-12 text-right">
                                         <div for="send">
-                                            <button type="submit" class="btn btn-primary form-control-lg" id="send">Alterar</button>
-                                            <!-- <a href="result.php??php echo $id;?>" class="btn btn-outline-light" rel="noopener noreferrer">Cancelar</a>
-                                            -->
+                                            <button type="submit" class="btn btn-primary form-control-lg" id="send">Enviar</button>
                                         </div>
                                     </div>
                                 </div>
@@ -92,9 +87,12 @@
                 </div>
             </div>
 
-    </section><!-- ./Edição Formulario -->
-
-
+    </section>
+    <script>
+        console.log("index carregada")
+    </script>
+    
+    <!-- ./Inscrição Formulario -->
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -32,20 +32,18 @@
         <nav class="navbar navbar-expand-sm navbar-light bg-primary"><!-- Barra de Navegação -->
             <div class="container">
                 <div class="row">
-                    <form class="mt-4 mb-4" action="../src/result.php" method="get">
-                        <div class="input-group input-group-lg">
-                            <input type="text" class="form-control" name="search" id="search" placeholder="Nome:">
-                            <div class="input-group-append">
-                                <button type="submit" class="btn btn-outline-light" id="send">Buscar</button>
-                            </div>
-                        </div>
-                    </form>
+                    <h2>FormsPHP</h2>
                 </div>
-								<div class="mt-4 mb-4">
-                  <a href="../src/result.php"
+			  <div class="mt-4 mb-4">
+                <a href="../src/add.php"
                   class="btn btn-outline-light"
                   rel="noopener noreferrer">
-                  Listar Cadastrados
+                  Novo
+                </a>
+                <a href="../src/result.php"
+                  class="btn btn-outline-light"
+                  rel="noopener noreferrer">
+                  Listar
                 </a>
               </div>
             </div>
@@ -56,32 +54,16 @@
             <div class="clientFormSubmit">
                 <div class="row justify-content-center">
                     <div class="col-md-6">
-                        <form class="d-flex" action="../src/receiving.php" method="post">
-                            <div class="form-group col-12">
-                                <div class="align-self-center">
-                                    <br>
-                                    <h2>Adicionar Novo</h2>
-                                    <p>Entre com dados para cadastro:</p>
-                                    <hr>
-                                </div>
-                                <label for="name"></label>
-                                <input type="text" class="form-control form-control-lg" name="name" id="name" placeholder="Nome:">
-
-                                <label for="inputEmail1"></label>
-                                <input type="email" class="form-control form-control-lg" name="email" id="inputEmail1" placeholder="E-mail:">
-
-                                <label for="address"></label>
-                                <input type="text" class="form-control form-control-lg" name="address" id="address" placeholder="Endereço:">
-                                <br>
-                                <div class="form-row">
-                                    <div class="form-group col-12 text-right">
-                                        <div for="send">
-                                            <button type="submit" class="btn btn-primary form-control-lg" id="send">Enviar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                    <br>
+                    <div class="jumbotron">
+                        <h1 class="display-4">Hello, world!</h1>
+                        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                        <hr class="my-4">
+                        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                        <p class="lead">
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Criar Conta</a>
+                        </p>
+                    </div>
                     </div>
                 </div>
             </div>

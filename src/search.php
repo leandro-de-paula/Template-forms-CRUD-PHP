@@ -14,7 +14,7 @@
                 </form>
             </div>
             <div class="mt-4 mb-4">
-                <a href="../public/index.php" class="btn btn-outline-light" rel="noopener noreferrer">Adicionar Novo</a>
+                <a href="../src/add.php" class="btn btn-outline-light" rel="noopener noreferrer">Novo</a>
             </div>
         </div>
     </nav><!-- Fim da Barra de Navegação -->

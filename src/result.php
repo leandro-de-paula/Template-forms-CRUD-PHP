@@ -30,7 +30,7 @@
 <body>
     
     <?php include_once "search.php";?>
-    <?php include_once "../src/database/config.php";?>
+    <?php include_once "../src/config/config.php";?>
     <script>
         function delete_id() {
             if (confirm("Você deseja deletar esse registro? Ao confirmar você não será possivel recuperar.")) 

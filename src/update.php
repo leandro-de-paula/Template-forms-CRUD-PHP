@@ -1,4 +1,4 @@
-<?php include_once "../src/database/config.php";?>
+<?php include_once "../src/config/config.php";?>
  
     <?php 
     ini_set("display_errors", true);

@@ -3,7 +3,7 @@
 ini_set("display_errors", true);
 error_reporting(E_ALL);
 
-require_once "../src/database/config.php";
+require_once "../src/config/config.php";
 
 
 $name = $_POST["name"];

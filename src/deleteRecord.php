@@ -1,5 +1,5 @@
 <?php 
-include_once "../src/database/config.php";
+include_once "../src/config/config.php";
 ini_set("diplay_error",true);
 error_reporting(E_ALL);
 
