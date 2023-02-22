@@ -40,10 +40,10 @@
                   rel="noopener noreferrer">
                   Novo
                 </a>
-                <a href="../src/result.php"
+                <a href="../src/views/login.php"
                   class="btn btn-outline-light"
                   rel="noopener noreferrer">
-                  Listar
+                  Login
                 </a>
               </div>
             </div>
